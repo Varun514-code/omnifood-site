@@ -391,3 +391,11 @@ header {
 .city-features {
     margin-bottom: 5px;
 }
+
+
+/*-----------Testimonials---------------*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/back-customers.jpg);
+    background-size: cover;
+}
