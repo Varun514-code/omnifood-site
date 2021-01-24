@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    /* For navigation */
+
     $('.js--section-features').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
