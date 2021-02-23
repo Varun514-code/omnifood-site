@@ -8,39 +8,33 @@
 </head>
 
 <body>
-    <form action="index.html" method="POST"></form>
-    <fieldset>
-        <legend>Personol Details:</legend>
-        <label for="name">Username:</label><input type="text" name="Username" id="name" required autofocus placeholder="Your username" pattern="{a-zA-z}[3,]">
-        <label for="email"></label>Email:</label><input type="text" name="Email" id="email" required placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zAa-Z{2,}">
-        <label for="phone">Phone Number:</label><input type="tel" name="phone" id="phone" required placeholder="Your Phone Number " pattern="{0-9}[4] {0-9}[3]{0-9}[3]">
-        <select name="country" required>
+    <form action="index.html" method="POST">
+        <fieldset>
+            <legend>Personol Details:</legend>
+            <label for="name">Username:</label><input type="text" name="Username" id="name" required autofocus placeholder="Your username" pattern="{a-zA-z}[3,]">
+            <label for="email"></label>Email:</label><input type="text" name="Email" id="email" required placeholder="Your Email" pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zAa-Z{2,}">
+            <label for="phone">Phone Number:</label><input type="tel" name="phone" id="phone" required placeholder="Your Phone Number " pattern="{0-9}[4] {0-9}[3]{0-9}[3]">
+            <select name="country" required>
         <option value="IND">IND</option>
         <option value="US">US</option>
         <option value="AUS">AUS</option>
         <option value="UK">UK</option>
     </select>
-    </fieldset>
-    <br>
-    <fieldset>
-        <legend>Booking Details:</legend>
-        <input type="date" name="date" min="2013-12-02">
-        <input type="number" name="Number Off Guestest" min="1" max="10">
-        <p>Do you require meals?</p>
-        <input type="radio" name="Meals" value="YesMeal">
-        <input type="radio" name="Meals" value="NoMeal">
+        </fieldset>
         <br>
-        <input type="checkbox" name="Balcony" value="Yes" checked>
-        <br>
-        <input type="image" src="resources/images/button.jpg" class="button-submit" onclick="check(this.form)">
-        <script>
-            let button = document.getElementsByClassName('button-submit');
-
-            button.onclick = function check(form) {
-                window.open(index.html);
-            }
-        </script>
-    </fieldset>
+        <fieldset>
+            <legend>Booking Details:</legend>
+            <input type="date" name="date" min="2013-12-02">
+            <input type="number" name="Number Off Guestest" min="1" max="10">
+            <p>Do you require meals?</p>
+            <input type="radio" name="Meals" value="YesMeal">
+            <input type="radio" name="Meals" value="NoMeal">
+            <br>
+            <input type="checkbox" name="Balcony" value="Yes" checked>
+            <br>
+            <input type="image" src="resources/images/button.jpg">
+        </fieldset>
+    </form>
 </body>
 
 </html>
