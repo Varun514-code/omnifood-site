@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="index.html" method="POST">
+    <form action="destionation.html" method="POST">
         <fieldset>
             <legend>Personol Details:</legend>
             <label for="name">Username:</label><input type="text" name="Username" id="name" required autofocus placeholder="Your username" pattern="{a-zA-z}[3,]">
@@ -24,16 +24,15 @@
         <br>
         <fieldset>
             <legend>Booking Details:</legend>
-            <input type="date" name="date" min="2013-12-02">
-            <input type="number" name="guest-number" min="1" max="10">
+            <label for="date">Booking Date: </label><input id="date" type="date" name="date" min="2013-12-02">
+            <label for="Number of Guest">Number of Guest: </label><input id="Number of Guest" type="number" name="guest-number" min="1" max="10">
             <p>Do you require meals?</p>
-            <input type="radio" name="Meals" value="YesMeal">
-            <input type="radio" name="Meals" value="NoMeal">
+            <label for="YesMeals">Yes: </label><input id="YesMeals" type="radio" name="Meals" value="YesMeal">
+            <label for="NoMeals">No: </label><input id="NoMeals" type="radio" name="Meals" value="NoMeal">
             <br>
-            <p>Balcony?</p>
-            <input type="checkbox" name="Balcony" value="Yes" checked>
+            <label for="balcony">Do you require a Balcony?</label><input id="balcony" type="checkbox" name="Balcony" value="Yes" checked>
             <br>
-            <input type="image" src="resources/images/button.jpg">
+            <input type="image" src="resources/images/button.jpg" alt="Submit">
         </fieldset>
     </form>
 </body>
